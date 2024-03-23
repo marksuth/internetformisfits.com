@@ -1,0 +1,94 @@
+
+html, body {
+    background-image: url(images/body.png);
+    background-color: #fff;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #000;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    overflow-y: auto;
+}
+
+header {
+    text-align: center;
+    padding: 5vh 0;
+    min-height: 50vh;
+}
+
+h1, h2, h3, h4 {
+    font-family: monospace;
+    color: black;
+    margin: 0;
+}
+
+p {
+    font-size: 1.25rem;
+    line-height: 1.75;
+}
+
+h2 {
+    text-align: center;
+    font-size: 3rem;
+    display: inline-block;
+    padding: 0.5rem;
+    background-color: yellow;
+}
+
+img {
+    min-width: 40vw;
+    max-width: 100%;
+    max-height: auto;
+    display: block;
+    margin: 0 auto;
+    filter: drop-shadow(5px 5px 0px white) !important;
+    animation: hue-rotate 10s linear infinite;
+
+}
+.tube {
+max-width: 70vw;
+margin: 0 auto;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: deeppink;
+    color: yellow;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 2rem;
+    text-decoration: none;
+    transform: rotate(-1deg);
+    filter: drop-shadow(5px 5px 0px black) !important;
+
+
+}
+
+.btn-alt {
+    color: deeppink;
+    background-color: aqua;
+}
+section {
+    margin-bottom: 4rem;
+    min-height: 25vh;
+}
+
+.inverse {
+    background: rgba(0,0,0,0.75);
+    color: white;
+    padding: 2rem 0;
+    transform: rotate(1deg);
+}
+
+@keyframes hue-rotate {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
