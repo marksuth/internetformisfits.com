@@ -9,7 +9,7 @@ html, body {
     margin: 0;
     padding: 0;
     font-size: 16px;
-    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 header {
@@ -37,16 +37,25 @@ h2 {
     background-color: yellow;
 }
 
-img {
+.logo {
     min-width: 40vw;
     max-width: 100%;
     max-height: auto;
     display: block;
     margin: 0 auto;
-    filter: drop-shadow(5px 5px 0px white) !important;
-    animation: hue-rotate 10s linear infinite;
-
+    animation: hue-rotate 5s infinite;
 }
+@keyframes hue-rotate {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+    
+}
+
+
 .tube {
 max-width: 70vw;
 margin: 0 auto;
@@ -78,17 +87,10 @@ section {
 
 .inverse {
     background: rgba(0,0,0,0.75);
+    width: 101vw;
     color: white;
     padding: 2rem 0;
     transform: rotate(1deg);
+    overflow: hidden !important;
 }
 
-@keyframes hue-rotate {
-    0% {
-        filter: hue-rotate(0deg);
-    }
-
-    100% {
-        filter: hue-rotate(360deg);
-    }
-}
